@@ -119,19 +119,19 @@ console.log(oldCars);
 let BMWAndAudi = [];
 let makeArray = [];
 for(i=0;i<inventory.length;i++) {
-    let car = inventory[i];
-    let make = car.car_make;
-    //console.log(make);
-    BMWAndAudi.push(make);
+   if(inventory[i].car_make === 'BMW' || inventory[i].car_make === 'Audi'){
+       BMWAndAudi.push(inventory[i]);
+   }
 }
-BMWAndAudi.filter(function(item) {
-    if(item === 'BMW') {
-        let BMWCar = inventory.indexOf(item);
-        console.log(inventory[BMWCar]);
-    } else if(item === 'Audi') {
+console.log(BMWAndAudi);
+// BMWAndAudi.filter(function(item) {
+//     if(item === 'BMW') {
+//         let BMWCar = inventory.indexOf(item);
+//         console.log(inventory[BMWCar]);
+//     } else if(item === 'Audi') {
         
-    }
-});
+//     }
+// });
 
 
 
