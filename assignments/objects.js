@@ -30,7 +30,7 @@ const intern2 = {
   firstName: 'Kennan',
   gender: 'M',
   speak: function() {
-    console.log('Hello, my name is Kennan!');
+    return('Hello, my name is Kennan!');
   }
 }
 const intern3 = {
@@ -51,7 +51,7 @@ const intern5 = {
   firstName: 'Antonietta',
   gender: 'F',
   multiplyNums: function(num1, num2) {
-    console.log(num1 * num2);
+    return(num1 * num2);
   }
 }
 
@@ -89,19 +89,19 @@ const parent = {
   name: 'Susan',
   age: 70,
   speak: function() {
-    console.log(this.name);
+    return this.name;
   },
   child: {
     name: 'George',
     age: 50,
     speak: function() {
-      console.log(this.name);
+      return this.name;
     },
     grandChild: {
       name: 'Sam',
       age: 30,
       speak: function() {
-        console.log(this.name);
+        return this.name;
       }
     }
   }
